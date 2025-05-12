@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Naiyo24</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Naiyo24</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="servers.html">Servers</a></li>
+                <li><a href="hiring.html">Hiring</a></li>
+                <li><a href="team.html">CEO's Desk</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Let's create something amazing together</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container reveal">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="services">Services</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="contact-details reveal">
+                    <div class="contact-card">
+                        <h2>Contact Information</h2>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Our Location</h3>
+                                <p>1/30 Chittaranjan Colony, Baghajatin, Kolkata - 700032</p>
+                                <a href="https://www.google.com/maps/place/1%2F30B,+Chittaranjan+Colony,+Baghajatin+Colony,+Kolkata,+West+Bengal+700032/@22.4859394,88.3756177,17z/data=!4m15!1m8!3m7!1s0x3a027113f1eb3c9d:0xe0b6d1870db350f9!2s1%2F30B,+Chittaranjan+Colony,+Baghajatin+Colony,+Kolkata,+West+Bengal+700032!3b1!8m2!3d22.4859394!4d88.3781926!16s%2Fg%2F11yc9b88sd!3m5!1s0x3a027113f1eb3c9d:0xe0b6d1870db350f9!8m2!3d22.4859394!4d88.3781926!16s%2Fg%2F11yc9b88sd?entry=ttu" target="_blank" class="map-link">View on Google Maps <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Email Us</h3>
+                                <p>contact@naiyo24.com</p>
+                                <p>support@naiyo24.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Call Us</h3>
+                                <p>+91-XXXXXXX</p>
+                                <p>+91-XXXXXXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Working Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find quick answers to common questions about our services and support</p>
+            </div>
+            <div class="faqs-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What services do you offer?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a comprehensive range of services including web development, mobile app development, UI/UX design, cloud solutions, digital marketing, and IT consulting. Each service is tailored to meet your specific business needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I get started with your services?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Getting started is easy! Simply fill out our contact form, and one of our representatives will get in touch with you within 24 hours to discuss your project requirements and provide a detailed consultation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your pricing structure?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our pricing is project-based and depends on your specific requirements. We provide detailed quotes after understanding your project scope. We believe in transparent pricing with no hidden costs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide ongoing support?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive support and maintenance services. Our dedicated support team is available to assist you with any technical issues, updates, or improvements you may need.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your project timeline?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on complexity and scope. During our initial consultation, we'll provide you with a detailed timeline and milestones for your specific project.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you work with international clients?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We work with clients globally and have experience in managing international projects. We ensure smooth communication and delivery regardless of your location.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.1234567890123!2d88.3756177!3d22.4859394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027113f1eb3c9d%3A0xe0b6d1870db350f9!2s1%2F30B%2C%20Chittaranjan%20Colony%2C%20Baghajatin%20Colony%2C%20Kolkata%2C%20West%20Bengal%20700032!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Social Connect Section -->
+    <section class="social-connect">
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <div class="social-grid">
+                <a href="#" class="social-card" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="social-card" aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-card" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-card" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="company-info">
+                    <h3>Naiyo24</h3>
+                    <p>Transforming ideas into digital excellence. We create innovative solutions that drive business growth and success.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@naiyo24.com</p>
+                        <p><i class="fas fa-phone"></i> +91-XXXXXXX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 1/30 Chittaranjan Colony, Baghajatin, Kolkata - 700032</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html"><i class="fas fa-chevron-right"></i>About Us</a>
+                    <a href="services.html"><i class="fas fa-chevron-right"></i>Services</a>
+                    <a href="projects.html"><i class="fas fa-chevron-right"></i>Projects</a>
+                    <a href="team.html"><i class="fas fa-chevron-right"></i>CEO's Desk</a>
+                    <a href="hiring.html"><i class="fas fa-chevron-right"></i>Careers</a>
+                    <a href="contact.html"><i class="fas fa-chevron-right"></i>Contact</a>
+                </div>
+                <div class="footer-links">
+                    <a href="servers.html"><i class="fas fa-chevron-right"></i>Server Hosting</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>Privacy Policy</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>Terms of Service</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>Support</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>Blog</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="tagline">"Code. Create. Inspire."</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="copyright">© 2024 Naiyo24 Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
