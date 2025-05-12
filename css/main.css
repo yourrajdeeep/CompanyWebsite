@@ -2645,14 +2645,14 @@ body {
 
 .faq-question h3 {
     font-size: 1.2rem;
-    color: #2c3e50;
+    color: #010101;
     margin: 0;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .faq-question:hover h3 {
-    color: #4a90e2;
+    color: #000000;
 }
 
 .faq-icon {
@@ -2667,7 +2667,7 @@ body {
 }
 
 .faq-icon i {
-    color: #4a90e2;
+    color: #000000;
     font-size: 1rem;
     transition: transform 0.3s ease;
 }
@@ -3864,7 +3864,7 @@ body {
     border: 2px solid #e9ecef;
     border-radius: 10px;
     font-size: 1rem;
-    color: #2c3e50;
+    color: #000000;
     background: #f8f9fa;
     transition: all 0.3s ease;
 }
