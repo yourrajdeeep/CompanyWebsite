@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Request - Naiyo24</title>
+    <title>Server Hosting Form - Naiyo24</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/animations.css">
@@ -28,8 +28,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="servers.html">Servers</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="servers.html" class="active">Servers</a></li>
                 <li><a href="hiring.html">Hiring</a></li>
                 <li><a href="team.html">CEO's Desk</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -41,10 +41,10 @@
     <section class="form-section">
         <div class="form-container">
             <div class="form-header">
-                <h2>Service Request</h2>
-                <p>Fill out the form below to request our services</p>
+                <h2>Server Hosting Request</h2>
+                <p>Fill out the form below to request server hosting services</p>
             </div>
-            <form id="serviceRequestForm">
+            <form id="serverRequestForm">
                 <div class="form-group">
                     <label for="name">Name / Organization Name</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your name or organization name">
@@ -58,33 +58,32 @@
                     <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
                 </div>
                 <div class="form-group">
-                    <label for="service">Service Type</label>
+                    <label for="service">Server Hosting Service</label>
                     <select id="service" name="service" required>
                         <option value="">Select a service</option>
-                        <option value="web-development">Web Development</option>
-                        <option value="mobile-app">Mobile App Development</option>
-                        <option value="ui-design">UI/UX Design</option>
-                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="cloud-hosting">Cloud Hosting</option>
+                        <option value="web-domain">Web Domain</option>
+                        <option value="email-registration">Email Registration</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="budget">Budget Range</label>
-                    <select id="budget" name="budget" required>
-                        <option value="">Select budget range</option>
-                        <option value="small">$1,000 - $5,000</option>
-                        <option value="medium">$5,000 - $15,000</option>
-                        <option value="large">$15,000+</option>
+                    <label for="plan">Plan Selection</label>
+                    <select id="plan" name="plan" required>
+                        <option value="">Select a plan</option>
+                        <option value="basic">Basic Plan</option>
+                        <option value="premium">Premium Plan</option>
+                        <option value="business">Business Plan</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="message">Project Details</label>
-                    <textarea id="message" name="message" required placeholder="Describe your project requirements and goals"></textarea>
+                    <label for="message">Additional Requirements (Optional)</label>
+                    <textarea id="message" name="message" placeholder="Enter any additional requirements or specifications"></textarea>
                 </div>
                 <button type="submit" class="submit-button">Submit Request</button>
             </form>
             <div class="form-success" id="formSuccess">
                 <h3>Request Submitted Successfully!</h3>
-                <p>We will contact you shortly to discuss your project.</p>
+                <p>We will contact you shortly with more details.</p>
             </div>
         </div>
     </section>
@@ -135,5 +134,20 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script>
+        // Auto-fill plan selection based on localStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectedPlan = localStorage.getItem('selectedPlan');
+            if (selectedPlan) {
+                const planData = JSON.parse(selectedPlan);
+                const planSelect = document.getElementById('plan');
+                if (planSelect) {
+                    // Convert plan name to value format
+                    const planValue = planData.name.toLowerCase().replace(' plan', '');
+                    planSelect.value = planValue;
+                }
+            }
+        });
+    </script>
 </body>
 </html>

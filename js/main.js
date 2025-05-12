@@ -218,3 +218,76 @@ if (serviceRequestForm) {
         window.location.href = 'services.html';
     });
 }
+
+// Server Plans Modal Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const plansModal = document.getElementById('plansModal');
+    const closeModal = document.querySelector('.close-modal');
+    const planButtons = document.querySelectorAll('.plan-button');
+    const modalTriggers = document.querySelectorAll('[data-modal="plans"]');
+
+    // Function to open modal
+    function openPlansModal(e) {
+        if (e) {
+            e.preventDefault();
+        }
+        if (plansModal) {
+            plansModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    // Function to close modal
+    function closePlansModal() {
+        if (plansModal) {
+            plansModal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+    }
+
+    // Close modal when clicking the close button
+    if (closeModal) {
+        closeModal.addEventListener('click', closePlansModal);
+    }
+
+    // Close modal when clicking outside the modal content
+    window.addEventListener('click', function(event) {
+        if (event.target === plansModal) {
+            closePlansModal();
+        }
+    });
+
+    // Close modal when pressing Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && plansModal && plansModal.style.display === 'block') {
+            closePlansModal();
+        }
+    });
+
+    // Handle Book Now button clicks
+    const bookNowButtons = document.querySelectorAll('.plan-button');
+    bookNowButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const planCard = this.closest('.plan-card');
+            const planName = planCard.querySelector('h3').textContent;
+            const planPrice = planCard.querySelector('.plan-price').textContent;
+            
+            // Store selected plan details
+            localStorage.setItem('selectedPlan', JSON.stringify({
+                name: planName,
+                price: planPrice
+            }));
+            
+            // Redirect to server form
+            window.location.href = 'server-form.html';
+        });
+    });
+
+    // Add click event to modal triggers
+    if (modalTriggers) {
+        modalTriggers.forEach(trigger => {
+            trigger.addEventListener('click', openPlansModal);
+        });
+    }
+});

@@ -61,7 +61,7 @@
                         <li><i class="fas fa-check"></i> 24/7 Support</li>
                         <li><i class="fas fa-check"></i> DDoS Protection</li>
                     </ul>
-                    <a href="#" class="server-link">View Plans <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="server-link" data-modal="plans">View Plans <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Cloud Hosting -->
@@ -77,7 +77,7 @@
                         <li><i class="fas fa-check"></i> Global CDN</li>
                         <li><i class="fas fa-check"></i> Backup Solutions</li>
                     </ul>
-                    <a href="#" class="server-link">View Plans <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="server-link" data-modal="plans">View Plans <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- VPS Hosting -->
@@ -93,7 +93,7 @@
                         <li><i class="fas fa-check"></i> Resource Isolation</li>
                         <li><i class="fas fa-check"></i> Easy Management</li>
                     </ul>
-                    <a href="#" class="server-link">View Plans <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="server-link" data-modal="plans">View Plans <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Managed Hosting -->
@@ -109,7 +109,7 @@
                         <li><i class="fas fa-check"></i> Performance Optimization</li>
                         <li><i class="fas fa-check"></i> Expert Support</li>
                     </ul>
-                    <a href="#" class="server-link">View Plans <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="server-link" data-modal="plans">View Plans <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Colocation -->
@@ -125,7 +125,7 @@
                         <li><i class="fas fa-check"></i> Climate Control</li>
                         <li><i class="fas fa-check"></i> Physical Security</li>
                     </ul>
-                    <a href="#" class="server-link">View Plans <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="server-link" data-modal="plans">View Plans <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Backup Solutions -->
@@ -141,7 +141,7 @@
                         <li><i class="fas fa-check"></i> Offsite Storage</li>
                         <li><i class="fas fa-check"></i> Data Encryption</li>
                     </ul>
-                    <a href="#" class="server-link">View Plans <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="server-link" data-modal="plans">View Plans <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -184,6 +184,66 @@
             <a href="contact.html" class="cta-button">Get Started</a>
         </div>
     </section>
+
+    <!-- Server Plans Modal -->
+    <div class="plans-modal" id="plansModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Server Hosting Plans</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="plans-grid">
+                <!-- Basic Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Basic Plan</h3>
+                        <div class="plan-price">$49<span class="currency">/mo</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 2 CPU Cores</li>
+                        <li><i class="fas fa-check"></i> 4GB RAM</li>
+                        <li><i class="fas fa-check"></i> 100GB SSD Storage</li>
+                        <li><i class="fas fa-check"></i> Unlimited Bandwidth</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    </ul>
+                    <a href="server-form.html" class="plan-button">Book Now</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="plan-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Premium Plan</h3>
+                        <div class="plan-price">$99<span class="currency">/mo</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 4 CPU Cores</li>
+                        <li><i class="fas fa-check"></i> 8GB RAM</li>
+                        <li><i class="fas fa-check"></i> 200GB SSD Storage</li>
+                        <li><i class="fas fa-check"></i> Unlimited Bandwidth</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </ul>
+                    <a href="server-form.html" class="plan-button">Book Now</a>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Business Plan</h3>
+                        <div class="plan-price">$199<span class="currency">/mo</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 8 CPU Cores</li>
+                        <li><i class="fas fa-check"></i> 16GB RAM</li>
+                        <li><i class="fas fa-check"></i> 500GB SSD Storage</li>
+                        <li><i class="fas fa-check"></i> Unlimited Bandwidth</li>
+                        <li><i class="fas fa-check"></i> 24/7 Premium Support</li>
+                    </ul>
+                    <a href="server-form.html" class="plan-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
