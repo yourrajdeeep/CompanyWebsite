@@ -1,6 +1,28 @@
 // Navigation Toggle
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.querySelector('.nav-links');
+const navbar = document.querySelector('.navbar');
+
+// Variables for scroll behavior
+let lastScrollTop = 0;
+const scrollThreshold = 50; // Minimum scroll amount before hiding/showing navbar
+
+// Scroll-based navigation behavior
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Determine scroll direction and amount
+    if (Math.abs(currentScroll - lastScrollTop) > scrollThreshold) {
+        if (currentScroll > lastScrollTop && currentScroll > 100) {
+            // Scrolling down & past threshold - hide navbar
+            navbar.style.transform = 'translateY(-100%)';
+        } else {
+            // Scrolling up - show navbar
+            navbar.style.transform = 'translateY(0)';
+        }
+        lastScrollTop = currentScroll;
+    }
+});
 
 navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
@@ -35,8 +57,11 @@ window.addEventListener('load', revealOnScroll);
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return; // Skip if href is just "#"
+        
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(href);
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
@@ -181,3 +206,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Service Form Submission
+const serviceRequestForm = document.getElementById('serviceRequestForm');
+if (serviceRequestForm) {
+    serviceRequestForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Here you would typically send the form data to your server
+        // For now, we'll just redirect back to services.html
+        window.location.href = 'services.html';
+    });
+}
