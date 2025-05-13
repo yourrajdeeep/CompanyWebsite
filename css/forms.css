@@ -93,20 +93,24 @@
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
     text-align: center;
-    line-height: 1.5;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .submit-button:hover {
-    background-color: #333333;
+    background-color: #222222;
+    color: #fff;
     transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
 
 .submit-button:active {
+    background-color: #333333;
     transform: translateY(0);
 }
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/modern-forms.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts -->
@@ -758,72 +759,90 @@
             </div>
             <div class="contact-grid">
                 <div class="contact-form-container">
-                    <h2>Send us a Message</h2>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <i class="fas fa-user"></i>
-                            <input type="text" id="name" required>
-                            <label for="name">Your Name</label>
+                    <div class="form-header">
+                        <h2>Send us a Message</h2>
+                        <p>We'd love to hear from you</p>
+                    </div>
+                    <form id="contactForm" class="modern-form">
+                        <div class="form-group floating">
+                            <input type="text" id="name" name="name" required class="form-input">
+                            <label for="name" class="form-label">Full Name / Organization</label>
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" id="email" required>
-                            <label for="email">Your Email</label>
+                        <div class="form-group floating">
+                            <input type="email" id="email" name="email" required class="form-input">
+                            <label for="email" class="form-label">Email Address</label>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <i class="fas fa-phone"></i>
-                            <input type="tel" id="phone" required>
-                            <label for="phone">Your Phone</label>
+                        <div class="form-group floating">
+                            <input type="tel" id="phone" name="phone" required class="form-input">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <div class="input-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
                         </div>
-                       
-                        <div class="form-group">
-                            <i class="fas fa-comment"></i>
-                            <textarea id="message" required></textarea>
-                            <label for="message">Your Message</label>
+                        <div class="form-group floating">
+                            <textarea id="message" name="message" required class="form-input"></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                            <div class="input-icon">
+                                <i class="fas fa-comment-alt"></i>
+                            </div>
                         </div>
-                        <button type="submit" class="submit-btn">
-                            Send Message <i class="fas fa-paper-plane"></i>
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
                 </div>
                 <div class="contact-details">
                     <div class="contact-card">
-                        <h2>Contact Information</h2>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="info">
-                                <h3>Our Location</h3>
-                                <p>1/30 Chittaranjan Colony,</p>
-                                <p>Baghajatin, Kolkata- 700032</p>
-                                <a href="#" class="map-link">View on Map <i class="fas fa-arrow-right"></i></a>
-                            </div>
+                        <div class="card-header">
+                            <h2>Contact Information</h2>
+                            <p>Get in touch with us</p>
                         </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-phone-alt"></i>
+                        <div class="info-items">
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <h3>Visit Us</h3>
+                                    <p>1/30 Chittaranjan Colony,<br>Baghajatin, Kolkata- 700032</p>
+                                    <a href="#map-section" class="info-link">View on Map <i class="fas fa-arrow-right"></i></a>
+                                </div>
                             </div>
-                            <div class="info">
-                                <h3>Phone Number</h3>
-                                <p>+91 6289171798</p>
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <h3>Call Us</h3>
+                                    <p>+91 6289171798</p>
+                                    <a href="tel:+916289171798" class="info-link">Call Now <i class="fas fa-arrow-right"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="info">
-                                <h3>Email Address</h3>
-                                <p>naiyooffice@gmail.comm</p>
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info">
+                                    <h3>Email Us</h3>
+                                    <p>naiyooffice@gmail.com</p>
+                                    <a href="mailto:naiyooffice@gmail.com" class="info-link">Send Email <i class="fas fa-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="map-section">
+            <div class="map-section" id="map-section">
+               
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5989191057134!2d77.5945627!3d12.9715987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjgiTiA3N8KwMzUnNDAuNCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.0604939307837!2d88.37567169999999!3d22.4859394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027113f1eb3c9d%3A0xe0b6d1870db350f9!2s1%2F30B%2C%20Chittaranjan%20Colony%2C%20Baghajatin%20Colony%2C%20Kolkata%2C%20West%20Bengal%20700032!5e0!3m2!1sen!2sin!4v1683984561234!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -875,5 +894,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/modern-forms.js"></script>
 </body>
 </html>
