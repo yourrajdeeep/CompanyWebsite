@@ -1,0 +1,80 @@
+2025-05-16 02:12:10,123 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-16 02:12:10,123 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-16 02:12:10,124 [INFO]  * Restarting with stat
+2025-05-16 02:12:10,393 [WARNING]  * Debugger is active!
+2025-05-16 02:12:10,396 [INFO]  * Debugger PIN: 611-472-610
+2025-05-16 02:12:29,887 [INFO] 127.0.0.1 - - [16/May/2025 02:12:29] "OPTIONS /api/contact HTTP/1.1" 200 -
+2025-05-16 02:15:12,206 [INFO]  * Detected change in 'C:\\websites\\naiyo24\\CompanyWebsite\\backend\\app.py', reloading
+2025-05-16 02:15:12,253 [INFO]  * Restarting with stat
+2025-05-16 02:15:12,625 [WARNING]  * Debugger is active!
+2025-05-16 02:15:12,633 [INFO]  * Debugger PIN: 611-472-610
+2025-05-16 02:18:09,302 [INFO]  * Detected change in 'C:\\websites\\naiyo24\\CompanyWebsite\\backend\\app.py', reloading
+2025-05-16 02:18:09,346 [INFO]  * Restarting with stat
+2025-05-16 02:18:09,800 [WARNING]  * Debugger is active!
+2025-05-16 02:18:09,803 [INFO]  * Debugger PIN: 611-472-610
+2025-05-16 02:18:21,856 [INFO]  * Detected change in 'C:\\websites\\naiyo24\\CompanyWebsite\\backend\\app.py', reloading
+2025-05-16 02:18:21,887 [INFO]  * Restarting with stat
+2025-05-16 02:18:22,206 [WARNING]  * Debugger is active!
+2025-05-16 02:18:22,208 [INFO]  * Debugger PIN: 611-472-610
+2025-05-16 02:19:19,818 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-16 02:19:19,819 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-16 02:19:19,820 [INFO]  * Restarting with stat
+2025-05-16 02:19:20,083 [WARNING]  * Debugger is active!
+2025-05-16 02:19:20,086 [INFO]  * Debugger PIN: 611-472-610
+2025-05-16 02:19:36,775 [INFO] Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Accept': '*/*', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type', 'Origin': 'null', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Dest': 'empty', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:19:36,778 [INFO] Body: b''
+2025-05-16 02:19:36,780 [INFO] 127.0.0.1 - - [16/May/2025 02:19:36] "OPTIONS /api/contact HTTP/1.1" 200 -
+2025-05-16 02:20:43,766 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.239:5000
+2025-05-16 02:20:43,766 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-16 02:21:27,236 [INFO] Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Accept': '*/*', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type', 'Origin': 'null', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Dest': 'empty', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:21:27,242 [INFO] Body: b''
+2025-05-16 02:21:27,248 [INFO] 127.0.0.1 - - [16/May/2025 02:21:27] "OPTIONS /api/contact HTTP/1.1" 200 -
+2025-05-16 02:22:00,092 [INFO] Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Sec-Ch-Ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:22:00,093 [INFO] Body: b''
+2025-05-16 02:22:00,095 [INFO] 127.0.0.1 - - [16/May/2025 02:22:00] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-16 02:22:00,237 [INFO] Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'no-cors', 'Sec-Fetch-Dest': 'image', 'Referer': 'http://localhost:5000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:22:00,238 [INFO] Body: b''
+2025-05-16 02:22:00,239 [INFO] 127.0.0.1 - - [16/May/2025 02:22:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-16 02:37:26,330 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.239:5000
+2025-05-16 02:37:26,330 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-16 02:37:38,256 [INFO] Headers: {'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.4061', 'Host': 'localhost:5000', 'Content-Length': '137', 'Expect': '100-continue', 'Connection': 'Keep-Alive'}
+2025-05-16 02:37:38,256 [INFO] Body: b'{\r\n    "email":  "test@example.com",\r\n    "message":  "This is a test message",\r\n    "name":  "Test User",\r\n    "phone":  "1234567890"\r\n}'
+2025-05-16 02:37:38,257 [INFO] Received contact form submission
+2025-05-16 02:37:38,257 [INFO] Request Method: POST
+2025-05-16 02:37:38,257 [INFO] Request Headers: {'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.4061', 'Host': 'localhost:5000', 'Content-Length': '137', 'Expect': '100-continue', 'Connection': 'Keep-Alive'}
+2025-05-16 02:37:38,258 [INFO] Received data: {'email': 'test@example.com', 'message': 'This is a test message', 'name': 'Test User', 'phone': '1234567890'}
+2025-05-16 02:37:38,314 [INFO] Processing contact form submission for test@example.com
+2025-05-16 02:37:38,319 [INFO] Successfully stored contact message from test@example.com
+2025-05-16 02:37:38,320 [INFO] 127.0.0.1 - - [16/May/2025 02:37:38] "[35m[1mPOST /api/contact HTTP/1.1[0m" 201 -
+2025-05-16 02:38:33,489 [INFO] Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Accept': '*/*', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type', 'Origin': 'null', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Dest': 'empty', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:38:33,490 [INFO] Body: b''
+2025-05-16 02:38:33,491 [INFO] 127.0.0.1 - - [16/May/2025 02:38:33] "OPTIONS /api/contact HTTP/1.1" 200 -
+2025-05-16 02:38:33,738 [INFO] Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Content-Length': '106', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Accept': 'application/json', 'Sec-Ch-Ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'null', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:38:33,739 [INFO] Body: b'{"name":"Rajdeep Dey","email":"deyrajdeep201@gmail.com","phone":"6289398298","message":"HI TEAM NAIYO24!"}'
+2025-05-16 02:38:33,740 [INFO] Received contact form submission
+2025-05-16 02:38:33,740 [INFO] Request Method: POST
+2025-05-16 02:38:33,741 [INFO] Request Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Content-Length': '106', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Accept': 'application/json', 'Sec-Ch-Ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'null', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:38:33,741 [INFO] Received data: {'name': 'Rajdeep Dey', 'email': 'deyrajdeep201@gmail.com', 'phone': '6289398298', 'message': 'HI TEAM NAIYO24!'}
+2025-05-16 02:38:33,807 [INFO] Processing contact form submission for deyrajdeep201@gmail.com
+2025-05-16 02:38:33,814 [INFO] Successfully stored contact message from deyrajdeep201@gmail.com
+2025-05-16 02:38:33,815 [INFO] 127.0.0.1 - - [16/May/2025 02:38:33] "[35m[1mPOST /api/contact HTTP/1.1[0m" 201 -
+2025-05-16 02:39:28,423 [INFO] Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Accept': '*/*', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type', 'Origin': 'null', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Dest': 'empty', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:39:28,423 [INFO] Body: b''
+2025-05-16 02:39:28,424 [INFO] 127.0.0.1 - - [16/May/2025 02:39:28] "OPTIONS /api/contact HTTP/1.1" 200 -
+2025-05-16 02:39:28,745 [INFO] Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Content-Length': '131', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Accept': 'application/json', 'Sec-Ch-Ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'null', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:39:28,747 [INFO] Body: b'{"name":"Rajdeep Dey","email":"deyrajdeep201@gmail.com","phone":"6289398298","message":"Hello! The website is about to get ready!"}'
+2025-05-16 02:39:28,748 [INFO] Received contact form submission
+2025-05-16 02:39:28,749 [INFO] Request Method: POST
+2025-05-16 02:39:28,750 [INFO] Request Headers: {'Host': 'localhost:5000', 'Connection': 'keep-alive', 'Content-Length': '131', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'Accept': 'application/json', 'Sec-Ch-Ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'null', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-05-16 02:39:28,751 [INFO] Received data: {'name': 'Rajdeep Dey', 'email': 'deyrajdeep201@gmail.com', 'phone': '6289398298', 'message': 'Hello! The website is about to get ready!'}
+2025-05-16 02:39:28,822 [INFO] Processing contact form submission for deyrajdeep201@gmail.com
+2025-05-16 02:39:28,828 [INFO] Successfully stored contact message from deyrajdeep201@gmail.com
+2025-05-16 02:39:28,829 [INFO] 127.0.0.1 - - [16/May/2025 02:39:28] "[35m[1mPOST /api/contact HTTP/1.1[0m" 201 -
