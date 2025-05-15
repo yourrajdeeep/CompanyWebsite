@@ -141,3 +141,28 @@
 .page-transition.active {
     transform: scaleY(1);
 }
+
+/* Blog Modal Animations */
+.blog-modal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.blog-modal.fade-in {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blog-modal.fade-out {
+    opacity: 0;
+}
+
+.blog-modal-content {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.blog-modal.fade-in .blog-modal-content {
+    transform: translateY(0);
+}

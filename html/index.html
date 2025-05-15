@@ -659,7 +659,7 @@
                                 <span><i class="far fa-calendar"></i> Mar 15, 2024</span>
                                 <span><i class="far fa-clock"></i> 5 min read</span>
                             </div>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more" data-blog-id="ai-web-development">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -676,7 +676,7 @@
                                 <span><i class="far fa-calendar"></i> Mar 10, 2024</span>
                                 <span><i class="far fa-clock"></i> 4 min read</span>
                             </div>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more" data-blog-id="cloud-computing">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -693,7 +693,7 @@
                                 <span><i class="far fa-calendar"></i> Mar 5, 2024</span>
                                 <span><i class="far fa-clock"></i> 6 min read</span>
                             </div>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more" data-blog-id="cybersecurity">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -906,5 +906,22 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/modern-forms.js"></script>
+    <!-- Blog Article Modal -->
+    <div id="blogModal" class="blog-modal">
+        <div class="blog-modal-content">
+            <div class="blog-modal-header">
+                <h2></h2>
+                <button class="close-blog-modal">&times;</button>
+            </div>
+            <div class="blog-modal-body">
+                <img class="modal-blog-image" src="" alt="">
+                <div class="modal-blog-meta">
+                    <span class="modal-date"></span>
+                    <span class="modal-category"></span>
+                </div>
+                <div class="modal-blog-content"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

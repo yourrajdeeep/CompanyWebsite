@@ -186,6 +186,134 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Blog Modal Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const blogArticles = {
+        'ai-web-development': {
+            title: 'The Future of AI in Web Development',
+            image: '../assets/images/blog-ai.jpg',
+            date: 'March 15, 2024',
+            category: 'Technology',
+            content: `
+                <p>Artificial Intelligence is revolutionizing the way we approach web development. From automated coding assistance to intelligent user experience optimization, AI is becoming an integral part of modern web development practices.</p>
+                <h3>The Impact of AI on Development</h3>
+                <p>One of the most significant impacts of AI in web development is in the area of personalization. AI algorithms can analyze user behavior and preferences to create highly customized experiences for each visitor.</p>
+                <h3>Key Areas of AI Implementation</h3>
+                <ul>
+                    <li><strong>Automated Code Generation:</strong> AI-powered tools can generate code snippets and even complete components</li>
+                    <li><strong>Intelligent Debug Assistance:</strong> AI helps identify and fix bugs more efficiently</li>
+                    <li><strong>User Experience Optimization:</strong> AI analyzes user behavior to improve site layout and functionality</li>
+                    <li><strong>Predictive Analytics:</strong> AI helps forecast user trends and behavior</li>
+                </ul>
+                <p>As we look to the future, AI will continue to transform web development, making it more efficient and user-centric.</p>
+            `
+        },
+        'cloud-computing': {
+            title: 'Cloud Computing Trends 2024',
+            image: '../assets/images/blog1.jpeg',
+            date: 'March 10, 2024',
+            category: 'Cloud',
+            content: `
+                <p>The cloud computing landscape is rapidly evolving with new technologies and approaches emerging constantly.</p>
+                <h3>Major Trends in 2024</h3>
+                <ol>
+                    <li>Serverless Architecture Adoption</li>
+                    <li>Multi-cloud Strategies</li>
+                    <li>Edge Computing Integration</li>
+                    <li>AI-Powered Cloud Services</li>
+                </ol>
+                <p>Organizations are increasingly moving towards hybrid and multi-cloud solutions to optimize their operations and maintain flexibility.</p>
+                <h3>Security Considerations</h3>
+                <p>With the expansion of cloud services, security remains a top priority. Zero-trust architecture and advanced encryption are becoming standard practices.</p>
+            `
+        },
+        'cybersecurity': {
+            title: 'Essential Cybersecurity Practices',
+            image: '../assets/images/blog-cyber.jpg',
+            date: 'March 5, 2024',
+            category: 'Security',
+            content: `
+                <p>In today's digital landscape, cybersecurity is more critical than ever. Organizations must implement robust security measures to protect their assets.</p>
+                <h3>Key Security Measures</h3>
+                <p>Essential practices include:</p>
+                <ul>
+                    <li>Multi-factor Authentication</li>
+                    <li>Regular Security Audits</li>
+                    <li>Employee Security Training</li>
+                    <li>Incident Response Planning</li>
+                </ul>
+                <h3>Emerging Threats</h3>
+                <p>Stay ahead of new security challenges by monitoring emerging threats and updating security protocols regularly.</p>
+            `
+        }
+        // Add more articles as needed
+    };
+
+    const blogModal = document.getElementById('blogModal');
+    if (!blogModal) return;
+
+    const modalTitle = blogModal.querySelector('.blog-modal-header h2');
+    const modalImage = blogModal.querySelector('.modal-blog-image');
+    const modalDate = blogModal.querySelector('.modal-date');
+    const modalCategory = blogModal.querySelector('.modal-category');
+    const modalContent = blogModal.querySelector('.modal-blog-content');
+
+    // Handle Read More clicks
+    document.querySelectorAll('.read-more').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const blogId = this.getAttribute('data-blog-id');
+            const article = blogArticles[blogId];
+
+            if (article) {
+                modalTitle.textContent = article.title;
+                modalImage.src = article.image;
+                modalImage.alt = article.title;
+                modalDate.innerHTML = `<i class="far fa-calendar"></i> ${article.date}`;
+                modalCategory.innerHTML = `<i class="far fa-folder"></i> ${article.category}`;
+                modalContent.innerHTML = article.content;
+                
+                blogModal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+
+                // Add fade-in animation
+                blogModal.classList.add('fade-in');
+            }
+        });
+    });
+
+    // Close modal functionality
+    const closeModalBtn = blogModal.querySelector('.close-blog-modal');
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', closeBlogModal);
+    }
+
+    // Close on outside click
+    blogModal.addEventListener('click', (e) => {
+        if (e.target === blogModal) {
+            closeBlogModal();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && blogModal.style.display === 'block') {
+            closeBlogModal();
+        }
+    });
+
+    function closeBlogModal() {
+        blogModal.classList.remove('fade-in');
+        blogModal.classList.add('fade-out');
+        
+        setTimeout(() => {
+            blogModal.style.display = 'none';
+            document.body.style.overflow = '';
+            blogModal.classList.remove('fade-out');
+        }, 300);
+    }
+});
+
 // FAQ Accordion
 // Only one FAQ open at a time
 document.addEventListener('DOMContentLoaded', function() {
