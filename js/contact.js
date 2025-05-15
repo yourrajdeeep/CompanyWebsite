@@ -78,7 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             successDiv.remove();
         }, 5000);
-    }    // Intersection Observer for reveal animations
+    }
+
+    // Intersection Observer for reveal animations
     const revealElements = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -93,21 +95,4 @@ document.addEventListener('DOMContentLoaded', function() {
     revealElements.forEach(element => {
         observer.observe(element);
     });
-
-    // Initialize FAQs
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        
-        question.addEventListener('click', () => {
-            // Close other open FAQs
-            const currentlyActive = document.querySelector('.faq-item.active');
-            if (currentlyActive && currentlyActive !== item) {
-                currentlyActive.classList.remove('active');
-            }
-            
-            // Toggle current FAQ
-            item.classList.toggle('active');
-        });
-    });
-});
+}); 

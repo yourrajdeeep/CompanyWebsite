@@ -88,61 +88,233 @@ body {
 
 /* Hero Section */
 .hero {
+    position: relative;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/hero-bg.png');
+    align-items: flex-end;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../assets/images/hero-bg.png');
     background-size: cover;
     background-position: center;
-    color: var(--secondary-color);
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0.8) 50%, 
+        rgba(0,0,0,0.7) 100%);
+    z-index: 2;
 }
 
 .hero-content {
-    max-width: 800px;
-    padding: 2rem;
+    position: relative;
+    z-index: 3;
+    padding: 6rem;
+    width: 60%;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+.hero-text {
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    position: relative;
+    color: #ffffff;
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.glitch {
+    position: relative;
+    text-shadow: 0.05em 0 0 rgba(0,0,0,0.75),
+                -0.025em -0.05em 0 rgba(128,128,128,0.75),
+                0.025em 0.05em 0 rgba(255,255,255,0.75);
+    animation: glitch 500ms infinite;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #000000;
+    animation: glitch-1 200ms infinite;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: 2px 0 #808080;
+    animation: glitch-2 300ms infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 0.05em 0 0 #000000,
+                    -0.05em -0.025em 0 #808080,
+                    -0.025em 0.05em 0 #ffffff; }
+    14% { text-shadow: 0.05em 0 0 #000000,
+                    -0.05em -0.025em 0 #808080,
+                    -0.025em 0.05em 0 #ffffff; }
+    15% { text-shadow: -0.05em -0.025em 0 #000000,
+                    0.025em 0.025em 0 #808080,
+                    -0.05em -0.05em 0 #ffffff; }
+    49% { text-shadow: -0.05em -0.025em 0 #000000,
+                    0.025em 0.025em 0 #808080,
+                    -0.05em -0.05em 0 #ffffff; }
+    50% { text-shadow: 0.025em 0.05em 0 #000000,
+                    0.05em 0 0 #808080,
+                    0 -0.05em 0 #ffffff; }
+    99% { text-shadow: 0.025em 0.05em 0 #000000,
+                    0.05em 0 0 #808080,
+                    0 -0.05em 0 #ffffff; }
+    100% { text-shadow: -0.025em 0 0 #000000,
+                    -0.025em -0.025em 0 #808080,
+                    -0.025em -0.05em 0 #ffffff; }
+}
+
+.hero-text p {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
+    color: rgba(255,255,255,0.9);
+}
+
+.taglines {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.taglines span {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.7);
+    padding: 0.5rem 1.5rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
 }
 
 .cta-buttons {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
 }
 
 .btn {
-    padding: 0.8rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: 30px;
     text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn.primary {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #ffffff;
 }
 
 .btn.secondary {
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn.primary:hover {
+    background: transparent;
+    color: #ffffff;
+}
+
+.btn.secondary:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .hero-content {
+        width: 70%;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-bg {
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 3rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .taglines {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
 }
 
 /* Overview Section */
@@ -4139,4 +4311,10 @@ body {
     .modal-header h2 {
         font-size: 1.5rem;
     }
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #000000;
+    color: #ffffff;
 }

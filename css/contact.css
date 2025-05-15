@@ -1,6 +1,6 @@
 /* Contact Page Specific Styles */
 .contact-hero {
-    background: linear-gradient(135deg, #0984e3 0%, #074d7e 100%);
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
     padding: 120px 0;
     text-align: center;
     color: white;
@@ -11,11 +11,11 @@
 .contact-hero::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 100;
     left: 0;
     right: 0;
-    bottom: 0;
-    background: url('../assets/images/hero-bg.png') center/cover;
+    bottom: 10;
+    background: url('../assets/images/hero-bg.png') center/cover no-repeat;
     opacity: 0.1;
 }
 
