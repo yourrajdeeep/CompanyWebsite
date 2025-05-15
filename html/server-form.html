@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/modern-forms.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -38,52 +39,76 @@
     </nav>
 
     <!-- Form Section -->
-    <section class="form-section">
-        <div class="form-container">
+    <section class="contact-section">
+        <div class="contact-form-container">
             <div class="form-header">
                 <h2>Server Hosting Request</h2>
                 <p>Fill out the form below to request server hosting services</p>
             </div>
-            <form id="serverRequestForm">
+            <form id="serverRequestForm" class="modern-form">
                 <div class="form-group">
-                    <label for="name">Name / Organization Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your name or organization name">
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder=" ">
+                    <label for="name" class="form-label">Name / Organization Name</label>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder=" ">
+                    <label for="email" class="form-label">Email</label>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    <div class="input-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <input type="tel" id="phone" name="phone" class="form-input" required placeholder=" ">
+                    <label for="phone" class="form-label">Phone</label>
                 </div>
                 <div class="form-group">
-                    <label for="service">Server Hosting Service</label>
-                    <select id="service" name="service" required>
+                    <div class="input-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <select id="service" name="service" class="form-input" required>
                         <option value="">Select a service</option>
                         <option value="cloud-hosting">Cloud Hosting</option>
                         <option value="web-domain">Web Domain</option>
                         <option value="email-registration">Email Registration</option>
+                        <option value="vps-hosting">VPS Hosting</option>
+                        <option value="dedicated-server">Dedicated Server</option>
                     </select>
+                    <label for="service" class="form-label">Server Hosting Service</label>
                 </div>
                 <div class="form-group">
-                    <label for="plan">Plan Selection</label>
-                    <select id="plan" name="plan" required>
+                    <div class="input-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <select id="plan" name="plan" class="form-input" required>
                         <option value="">Select a plan</option>
-                        <option value="basic">Basic Plan</option>
-                        <option value="premium">Premium Plan</option>
-                        <option value="business">Business Plan</option>
+                        <option value="basic">Basic Plan - ₹499/month</option>
+                        <option value="premium">Premium Plan - ₹999/month</option>
+                        <option value="business">Business Plan - ₹1999/month</option>
+                        <option value="enterprise">Enterprise Plan - Custom</option>
                     </select>
+                    <label for="plan" class="form-label">Plan Selection</label>
                 </div>
                 <div class="form-group">
-                    <label for="message">Additional Requirements (Optional)</label>
-                    <textarea id="message" name="message" placeholder="Enter any additional requirements or specifications"></textarea>
+                    <div class="input-icon">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <textarea id="message" name="message" class="form-input" placeholder=" "></textarea>
+                    <label for="message" class="form-label">Additional Requirements (Optional)</label>
                 </div>
-                <button type="submit" class="submit-button">Submit Request</button>
+                <button type="submit" class="submit-button">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Submit Request</span>
+                </button>
             </form>
-            <div class="form-success" id="formSuccess">
-                <h3>Request Submitted Successfully!</h3>
-                <p>We will contact you shortly with more details.</p>
+            <div class="form-message" id="formSuccess">
+                <i class="fas fa-check-circle"></i>
+                <span>Request Submitted Successfully! We will contact you shortly.</span>
             </div>
         </div>
     </section>
@@ -96,7 +121,7 @@
                     <h3>Naiyo24</h3>
                     <p>Transforming ideas into digital excellence. We create innovative solutions that drive business growth and success.</p>
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> naiyooffice@gmail.comm</p>
+                        <p><i class="fas fa-envelope"></i> naiyooffice@gmail.com</p>
                         <p><i class="fas fa-phone"></i> +91 6289171798</p>
                         <p><i class="fas fa-map-marker-alt"></i> Kolkata, West Bengal, India</p>
                     </div>
@@ -132,8 +157,8 @@
             </div>
         </div>
     </footer>
-
     <script src="../js/main.js"></script>
+    <script src="../js/form-handler.js"></script>
     <script>
         // Auto-fill plan selection based on localStorage
         document.addEventListener('DOMContentLoaded', function() {

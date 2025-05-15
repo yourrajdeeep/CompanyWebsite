@@ -1,7 +1,11 @@
 /* Modern Contact Form Styles */
 .contact-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-grid {
@@ -14,27 +18,65 @@
 
 /* Form Container Styles */
 .contact-form-container {
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    transition: transform 0.3s ease;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    transition: all 0.4s ease;
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-form-container {
+    animation: formAppear 0.6s ease forwards;
+}
+
+@keyframes formAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .contact-form-container:hover {
     transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
 }
 
 .form-header {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
+    position: relative;
+}
+
+.form-header::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #000000, #333333);
+    border-radius: 2px;
 }
 
 .form-header h2 {
-    font-size: 32px;
+    font-size: 36px;
     color: #000000;
-    margin-bottom: 10px;
-    font-weight: 600;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    position: relative;
+    display: inline-block;
 }
 
 .form-header p {
@@ -45,18 +87,32 @@
 /* Modern Form Input Styles */
 .modern-form .form-group {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.modern-form .form-group:hover {
+    transform: translateY(-2px);
 }
 
 .modern-form .form-input {
     width: 100%;
-    padding: 15px 20px 15px 50px;
+    padding: 18px 20px 18px 50px;
     border: 2px solid #e0e0e0;
-    border-radius: 12px;
+    border-radius: 15px;
     font-size: 16px;
     transition: all 0.3s ease;
-    background: #f8f9fa;
-    color: #2d3436;
+    background: rgba(248, 249, 250, 0.9);
+    color: #000000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-weight: 500;
+}
+
+.modern-form .form-input:hover {
+    background: #ffffff;
+    border-color: #000000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .modern-form textarea.form-input {
@@ -71,10 +127,13 @@
     transform: translateY(-50%);
     background: transparent;
     padding: 0 5px;
-    color: #a0a0a0;
+    color: #666666;
     font-size: 16px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
+    font-weight: 500;
+    opacity: 0.8;
+    letter-spacing: 0.2px;
 }
 
 .modern-form textarea ~ .form-label {
@@ -89,6 +148,14 @@
     transform: translateY(-50%);
     color: #000000;
     font-size: 18px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.modern-form .form-group:focus-within .input-icon {
+    color: #000000;
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
 }
 
 .modern-form textarea ~ .input-icon {
@@ -101,7 +168,13 @@
 .modern-form .form-input:not(:placeholder-shown) {
     border-color: #000000;
     background: white;
-    box-shadow: 0 5px 15px rgba(9, 132, 227, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.modern-form .form-input:focus {
+    outline: none;
+    border-width: 2px;
 }
 
 .modern-form .form-input:focus ~ .form-label,
@@ -116,28 +189,55 @@
 /* Submit Button Styles */
 .submit-button {
     width: 100%;
-    padding: 16px 30px;
-    background: linear-gradient(135deg, #636364 0%, #000000 100%);
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
     border: none;
-    border-radius: 12px;
+    border-radius: 15px;
     color: white;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .submit-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #1a1a1a 0%, #4d4d4d 100%);
 }
 
 .submit-button:active {
     transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.submit-button:hover::before {
+    left: 100%;
 }
 
 /* Contact Info Card Styles */
@@ -292,12 +392,27 @@
 
 /* Form Success/Error Messages */
 .form-message {
-    padding: 15px 20px;
-    border-radius: 12px;
-    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
     display: none;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    animation: slideIn 0.5s ease forwards;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .form-message.success {

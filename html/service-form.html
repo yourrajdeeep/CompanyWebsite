@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/modern-forms.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -38,53 +39,77 @@
     </nav>
 
     <!-- Form Section -->
-    <section class="form-section">
-        <div class="form-container">
+    <section class="contact-section">
+        <div class="contact-form-container">
             <div class="form-header">
                 <h2>Service Request</h2>
                 <p>Fill out the form below to request our services</p>
             </div>
-            <form id="serviceRequestForm">
+            <form id="serviceRequestForm" class="modern-form">
                 <div class="form-group">
-                    <label for="name">Name / Organization Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your name or organization name">
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder=" ">
+                    <label for="name" class="form-label">Name / Organization Name</label>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder=" ">
+                    <label for="email" class="form-label">Email</label>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    <div class="input-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <input type="tel" id="phone" name="phone" class="form-input" required placeholder=" ">
+                    <label for="phone" class="form-label">Phone</label>
                 </div>
                 <div class="form-group">
-                    <label for="service">Service Type</label>
-                    <select id="service" name="service" required>
+                    <div class="input-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <select id="service" name="service" class="form-input" required>
                         <option value="">Select a service</option>
                         <option value="web-development">Web Development</option>
-                        <option value="mobile-app">Mobile App Development</option>
-                        <option value="ui-design">UI/UX Design</option>
+                        <option value="app-development">App Development</option>
+                        <option value="cloud-solutions">Cloud Solutions</option>
                         <option value="digital-marketing">Digital Marketing</option>
+                        <option value="cybersecurity">Cybersecurity</option>
                     </select>
+                    <label for="service" class="form-label">Service Type</label>
                 </div>
                 <div class="form-group">
-                    <label for="budget">Budget Range</label>
-                    <select id="budget" name="budget" required>
+                    <div class="input-icon">
+                        <i class="fas fa-money-bill"></i>
+                    </div>
+                    <select id="budget" name="budget" class="form-input" required>
                         <option value="">Select budget range</option>
-                        <option value="small">$1,000 - $5,000</option>
-                        <option value="medium">$5,000 - $15,000</option>
-                        <option value="large">$15,000+</option>
+                        <option value="0-5000">₹0 - ₹5,000</option>
+                        <option value="5000-10000">₹5,000 - ₹10,000</option>
+                        <option value="10000-50000">₹10,000 - ₹50,000</option>
+                        <option value="50000-100000">₹50,000 - ₹1,00,000</option>
+                        <option value="100000+">₹1,00,000+</option>
                     </select>
+                    <label for="budget" class="form-label">Budget Range</label>
                 </div>
                 <div class="form-group">
-                    <label for="message">Project Details</label>
-                    <textarea id="message" name="message" required placeholder="Describe your project requirements and goals"></textarea>
+                    <div class="input-icon">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <textarea id="message" name="message" class="form-input" required placeholder=" "></textarea>
+                    <label for="message" class="form-label">Project Details</label>
                 </div>
-                <button type="submit" class="submit-button">Submit Request</button>
+                <button type="submit" class="submit-button">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Submit Request</span>
+                </button>
             </form>
-            <div class="form-success" id="formSuccess">
-                <h3>Request Submitted Successfully!</h3>
-                <p>We will contact you shortly to discuss your project.</p>
+            <div class="form-message" id="formSuccess">
+                <i class="fas fa-check-circle"></i>
+                <span>Request Submitted Successfully! We will contact you shortly.</span>
             </div>
         </div>
     </section>
@@ -132,8 +157,7 @@
                 <p class="copyright">© 2024 Naiyo24 Pvt. Ltd. All rights reserved.</p>
             </div>
         </div>
-    </footer>
-
-    <script src="../js/main.js"></script>
+    </footer>    <script src="../js/main.js"></script>
+    <script src="../js/form-handler.js"></script>
 </body>
 </html>
